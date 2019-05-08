@@ -14,3 +14,4 @@ INSERT INTO burgers (burger_name) VALUES ('Pug');
 INSERT INTO burgers (burger_name) VALUES ('Cheddar and Onion');
 INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon', true);
 INSERT INTO burgers (burger_name, devoured) VALUES ('Minetta', true);
+
