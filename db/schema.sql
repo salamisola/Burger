@@ -15,3 +15,6 @@ INSERT INTO burgers (burger_name) VALUES ('Cheddar and Onion');
 INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon', true);
 INSERT INTO burgers (burger_name, devoured) VALUES ('Minetta', true);
 
+DELETE FROM burgers WHERE id = 2;
+
+select * From burgers;
