@@ -38,20 +38,17 @@ $(function () {
 
   $(".trashburger").on("click", function (event) {
     event.preventDefault();
-
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    /*$.ajax("/api/burgers/" + id, {
-      type: "DELETE",*/
-
     $.ajax({
       type: "DELETE",
       url: "/api/burgers/" + id
     }).then(location.reload());
   });
 });
-
+/*$.ajax("/api/burgers/" + id, {
+      type: "DELETE",*/
 
 
 
