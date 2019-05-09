@@ -85,20 +85,20 @@ var orm = {
 
       cb(res);
     });
+  },
+
+  deleteOne: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table + " WHERE " + condition;
+    console.log(queryString);
+
+    connection.query(queryString, function (err, response) {
+      if (err) {
+        throw err;
+      }
+      cb(response);
+    });
   }
+
 };
-deleteOne: function(table, condition, cb) {
-  var queryString = "DELETE FROM " + table + " WHERE " + condition;
-  console.log(queryString);
-
-  connection.query(queryString, function (err, response) {
-    if (err) {
-      throw err;
-    }
-    cb(response);
-  });
-};
-
-
 // Export the orm object for the model (cat.js).
 module.exports = orm;
